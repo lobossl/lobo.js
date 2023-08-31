@@ -1,9 +1,10 @@
-# lobo.js
+# [HOWTO lobo.js]
 
-# [How to use]
+# put this in your test.html
+<script src="./test.js" type="module"></script>
 
+# put this in your test.js
 import { database } from "./lobo.js"
-
 let db = new database("test")
 
 # save to localStorage database example
@@ -15,7 +16,7 @@ db.save({
 })
 
 # read from localStorage database example
-- Example: db.load().forEach((e) => { console.log() })
+- Example: db.load().forEach((e) => { console.log(e) })
 
 db.load()
 
