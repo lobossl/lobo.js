@@ -14,3 +14,10 @@ db.save({
 
 # read from localStorage database example
 db.load()
+
+# clear all from localStorage
+db.clear()
+
+# Why use this?
+- No need to add JSON parse / stringify
+- Simple use
