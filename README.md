@@ -14,10 +14,7 @@ let db = new database("test")
 # save to localStorage database example
 - This will add Object to a list of Array.
 ```
-db.save({
-  abc: "123",
-  test: "hello"
-})
+db.save(object)
 ```
 
 # read from localStorage database example
@@ -32,6 +29,18 @@ db.load()
 db.clear()
 ```
 
+
+# restore localStorage from your json file
+```
+db.restore(object)
+```
+
+# backup current localStorage data to json file
+```
+db.backup()
+```
+
 # Why use this?
 - No need to add JSON parse / stringify.
 - User friendly.
+- Make backup of todolist json file and restore it.
